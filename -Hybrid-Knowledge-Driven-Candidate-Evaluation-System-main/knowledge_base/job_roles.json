@@ -1,0 +1,75 @@
+{
+ "AI Engineer": [
+  "python",
+  "machine learning",
+  "tensorflow",
+  "pytorch",
+  "data science"
+ ],
+
+ "Cybersecurity Analyst": [
+  "network security",
+  "penetration testing",
+  "cryptography",
+  "firewall",
+  "siem",
+  "incident response"
+ ],
+
+ "Software Engineer": [
+  "java",
+  "python",
+  "data structures",
+  "algorithms",
+  "git",
+  "sql",
+  "c++"
+ ],
+
+ "Data Scientist": [
+  "python",
+  "machine learning",
+  "pandas",
+  "numpy",
+  "statistics",
+  "data visualization"
+ ],
+
+ "Web Developer": [
+  "html",
+  "css",
+  "javascript",
+  "react",
+  "node",
+  "sql",
+  "typescript"
+ ],
+
+ "DevOps Engineer": [
+  "docker",
+  "kubernetes",
+  "ci/cd",
+  "linux",
+  "cloud",
+  "terraform",
+  "aws"
+ ],
+
+ "Embedded Systems Engineer": [
+  "c",
+  "c++",
+  "embedded",
+  "firmware",
+  "microcontrollers",
+  "iot"
+ ],
+ 
+ "Business Analyst": [
+  "sql",
+  "excel",
+  "tableau",
+  "power bi",
+  "requirements gathering",
+  "agile"
+ ]
+}

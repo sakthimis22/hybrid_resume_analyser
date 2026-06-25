@@ -1,0 +1,95 @@
+{
+    "rules": [
+        {
+            "rule_id": "R1",
+            "description": "Excellent skill match",
+            "condition": "skill_score >= 0.8",
+            "action": "boost",
+            "weight": 0.37,
+            "priority": 1
+        },
+        {
+            "rule_id": "R2",
+            "description": "Strong skill match",
+            "condition": "skill_score >= 0.5",
+            "action": "boost",
+            "weight": 0.219,
+            "priority": 2
+        },
+        {
+            "rule_id": "R3",
+            "description": "Moderate skill match",
+            "condition": "skill_score >= 0.2",
+            "action": "boost",
+            "weight": 0.096,
+            "priority": 3
+        },
+        {
+            "rule_id": "R4",
+            "description": "No skill match",
+            "condition": "skill_score == 0",
+            "action": "penalize",
+            "weight": -0.1,
+            "priority": 4
+        },
+        {
+            "rule_id": "R5",
+            "description": "Experience requirement fully satisfied",
+            "condition": "exp_score == 1.0",
+            "action": "boost",
+            "weight": 0.073,
+            "priority": 5
+        },
+        {
+            "rule_id": "R6",
+            "description": "Partially meets experience requirement",
+            "condition": "exp_score >= 0.5",
+            "action": "boost",
+            "weight": 0.041,
+            "priority": 6
+        },
+        {
+            "rule_id": "R7",
+            "description": "Strong ML text similarity",
+            "condition": "ml_score >= 0.5",
+            "action": "boost",
+            "weight": 0.28,
+            "priority": 7
+        },
+        {
+            "rule_id": "R8",
+            "description": "Moderate ML text similarity",
+            "condition": "ml_score >= 0.2",
+            "action": "boost",
+            "weight": 0.178,
+            "priority": 8
+        },
+        {
+            "rule_id": "R9",
+            "description": "High combined score \u00e2\u20ac\u201d top candidate",
+            "condition": "final_score >= 0.5",
+            "action": "flag_top",
+            "weight": 0.0,
+            "priority": 9
+        },
+        {
+            "rule_id": "R10",
+            "description": "Skill and experience both strong",
+            "condition": "skill_score >= 0.5 and exp_score >= 0.5",
+            "action": "boost",
+            "weight": 0.235,
+            "priority": 10
+        }
+    ],
+    "metadata": {
+        "version": "1.1",
+        "description": "Rule Knowledge Base for AI Resume Analyzer hybrid ranking system",
+        "scoring_model": "weighted_hybrid",
+        "base_weights": {
+            "ml_similarity": 0.6,
+            "skill_match": 0.3,
+            "experience": 0.1
+        },
+        "last_updated_by": "Adaptive Rule Weighting Engine"
+    }
+}
